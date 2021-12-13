@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>Snow C</title>
+    <style>
+        .btn{
+            border-width: 2px;
+        }
+        .form-control{
+            border-width: 2px;
+        }
+        .header-carousel-item{
+            height: 450px;
+        }
+        .bg-cover{           
+            background-size: cover;
+            background-position: center center;
+
+        }
+        .carousel-caption{
+            background-color: rgba(0, 0, 0, .6);
+        }
+        .ol,ul{
+            list-style: none;
+        }
+        .text-pink{
+            color: indianred;
+        }
+    </style>    
+</head>
+<body>
+    <div class="bg-secondary py-1">
+        <div class="container text-end">
+            <a href="" class="text-white"><i class="fab fa-facebook-square bg-"></i></a>
+            <a href="" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid ms-5">
+            <a class="navbar-brand" href="#">
+                <img src="img/Snow C.svg" width="130" alt="" > 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            美味菜單
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">檸檬</a></li>
+                            <li><a class="dropdown-item" href="#">草莓</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">季節限定</a></li>
+                        </ul>
+                    </li>
+                    
+                    
+                </ul>
+                <form class="d-flex me-5">
+                    <a href="" class="btn btn-outline-primary me-1" data-bs-toggle="modal" data-bs-target="#loginModal">登入</a>
+                    <a href="" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registeModal">註冊</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+<header>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item header-carousel-item bg-cover active" style="background-image: url(https://images.unsplash.com/photo-1492683513054-55277abccd99?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h5>縱享輕奢 派對味</h5>
+                    <p>講究每一口的品質，堅持嚴選原料。以新鮮奶油、牛奶、砂糖與雞蛋為基底，打造出絕佳風味。</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover " style="background-image: url(https://images.unsplash.com/photo-1519340333755-56e9c1d04579?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h5>頂級原料 不同凡享</h5>
+                    <p>嚴選濃郁香醇的紅絲絨冰淇淋，完美揉合可可香氣，天鵝絨般絲滑輕盈的口感瞬間蔓延，拌入酸甜草莓與巧克力醬，交織出莓果魔力般的悸動，搭配義大利白雪餅乾，酥脆外殼裹著鬆軟內餡，散發難以忘懷的誘人魅力。</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover " style="background-image: url(https://images.unsplash.com/photo-1629385701021-fcd568a743e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)">
+                <div class="carousel-caption d-none d-md-block px-3">
+                    <h5>愛戀的赤裸裸辣辣</h5>
+                    <p>嚴選100%象牙海岸可可豆，以黃金比例打造NO.1極濃巧克力冰淇淋，拌入爽脆Oreo締造卡滋卡滋的驚喜口感，撒上純黑可可粉，妝點日本Bourbon苦黑帆船巧克力餅乾，極致濃郁的巧克力味蕾挑戰舌尖殿堂級滋味。</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</header>
+<section class="bg-info py-3 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <i class="fas fa-utensils fa-5x"></i>
+                </div>
+                <h3>忘卻不了的莓果香</h3>
+                <p>香純濃郁的香奶冰淇淋，搭配酸甜的草莓、覆盆莓和藍莓，成了最佳拍檔，品嚐每一口都讓人忍不住驚嘆：「啊！非常莓好！」</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <i class="fas fa-birthday-cake fa-5x"></i>
+                </div>
+                <h3>餅乾超載了</h3>
+                <p>濃醇香奶冰淇淋搭配黑巧克力葉，創造出濃郁多層次口感，豐富份量的OREO餅乾，讓您每一口盡是滿足～</p>
+            </div>
+            <div class="col-md-4">
+                <div class="mb-3">
+                    <i class="fas fa-candy-cane fa-5x"></i>
+                </div>
+                <h3>莓力四射</h3>
+                <p>綿密口感雪貝冰淇淋，搭上超人氣莓果，綜合出獨特又輕盈的莓果體驗，豐富的酸甜滋味讓人一試上癮～</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid py-5" style="position: relative;"> 
+    <div class="row">
+        <div class="col-md-5 bg-cover" style="
+            position: absolute; top: 0; bottom: 0; z-index: -1;
+            background-image: url(https://images.unsplash.com/photo-1602351447937-745cb720612f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80;"></div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-md-7">
+                <h3>歡迎來到Snow C</h3>
+                <p></p>
+                <a href="#" class="btn btn-outline-info">查看更多</a>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <h4>帶來幸福感的精品級千層蛋糕</h4>
+                        <p>自2001年創立，以法式經典千層蛋糕最具代表性，由專業甜點廚師以嚴選原料純手工雕琢，每份千層蛋糕使用超過20層的手工法式薄餅堆砌而成，引領法式優雅簡約風格，甜蜜的幸福滋味深植味蕾。</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>傳統法式糕點技藝與日本和風的結合</h4>
+                        <p>將品質和信譽作為經營理念的Snow C，在產品方面下了不少功夫，以最經典的法式經典千層蛋糕為例，結合著法式傳統工藝和日式和風創意，必須小心翼翼地將二十多層薄如紙片的軟嫰蛋皮手工堆疊，每層之間所鋪上的鮮奶油還得講究地用蘭姆酒提味。</p>
+                        <p>製作工序複雜且嚴謹，每一層的薄度與細緻程度，以及吹彈可破又不能破的薄度，都必須要在最完美的狀態才能過關。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center my-3">如何這麼美味</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="me-3"><i class="fas fa-hamburger fa-4x"></i></div>
+                    <div class="div">
+                        <h3>美艷的食材</h3>
+                        <p>堅持日本進口的上選原料，確保完美和諧的幸福美味；執著費時費工的製作過程，帶來無與倫比的輕柔口感。</p>
+                            
+                    </div>
+                </div>   
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="me-3"><i class="fas fa-pizza-slice fa-4x"></i></div>
+                    <div class="div">
+                        <h3>季節限定</h3>
+                        <p>極致濃郁巧克力味蕾挑戰殿堂級滋味，絲滑輕盈口感瞬間蔓延</p>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="me-3"><i class="fas fa-hotdog fa-4x"></i></div>
+                    <div class="div">
+                        <h3>美好的悸動昇華浪漫生活</h3>
+                        <p>單純的小確幸，也能讓人感到深刻的幸福感</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex">
+                    <div class="me-3"><i class="fas fa-ice-cream fa-4x"></i></div>
+                    <div class="div">
+                        <h3>妝點你的歡樂時刻</h3>
+                        <p>多層次口感完美呈現萌翻天的繽紛視覺。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid py-5" style="position: relative;">
+    <div class="row">
+        <div class="col-md-4 bg-cover" style="position: absolute; top: 0; bottom: 0; right: 0; z-index: -1;
+        background-image: url(https://images.unsplash.com/photo-1552689486-f6773047d19f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80);">
+            
+        </div>
+    </div>
+    <div class="container";>
+        <div class="row">
+            <div class="col-md-7 text-wrap">
+                <h3>讓快樂持續發生</h3>
+                <p>MIX&FUN 創造你的專屬甜點。</p>
+                <dl class="row justify-content-start text-wrap">
+                    <dt class="col-sm-3">黑糖珍珠牛奶</dt>
+                    <dd class="col-sm-9">
+                        <p>全球首推！挑戰舌尖究極味蕾的豪華饗宴，完美締造超人氣飲品冰品化，</p>
+                        <p>波霸珍珠Q彈、富嚼勁顛覆既有想像，淋上黃金比例的黑糖醬，瞬間香醇濃厚的味蕾蔓延，</p>
+                        <p>搭配綿密的香奶冰淇淋拌入酥脆餅乾，豐富的多層次滋味，堪稱開運新年必嚐首選！</p>
+                    </dd>
+                    <dt class="col-sm-3">耶誕紅絲絨</dt>
+                    <dd class="col-sm-9">
+                        <p>嚴選濃郁香醇的紅絲絨冰淇淋，完美揉合可可香氣，天鵝絨般絲滑輕盈的口感瞬間蔓延，</p>
+                        <p>拌入酸甜草莓與巧克力醬，交織出莓果魔力般的悸動，搭配義大利白雪餅乾，酥脆外殼裹著鬆軟內餡，散發難以忘懷的誘人魅力。</p>
+                    </dd>
+                
+                    <dt class="col-sm-3">耶誕濃巧克</dt>
+                    <dd class="col-sm-9">
+                        <p>嚴選100%象牙海岸可可豆，以黃金比例打造NO.1極濃巧克力冰淇淋，拌入爽脆Oreo締造卡滋卡滋的驚喜口感，</p>
+                        <p>撒上純黑可可粉，妝點日本Bourbon苦黑帆船巧克力餅乾，極致濃郁的巧克力味蕾挑戰舌尖殿堂級滋味。</p>
+                    </dd>
+                    <dt class="col-sm-3 text-truncate">創始者的最愛</dt>
+                    <dd class="col-sm-9">吃下一口創始者的最愛，口感豐富扎實，搭配濃郁焦糖醬及巧克力醬，讓你瞬間感受到COLD STONE創始者想要傳達無與倫比的冰淇淋歡樂體驗。</dd>
+                </dl>
+            </div>
+            
+        </div>
+    </div>
+
+</section>
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24341.728090922246!2d121.44120953646954!3d24.91777418587032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346804a80e8d5bf1%3A0xf1f66c452cf934ea!2z6b6N5rOJ5aKT5ZyS!5e0!3m2!1szh-TW!2stw!4v1637221758880!5m2!1szh-TW!2stw"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="username" class="form-label">姓名*</label>
+                        <input type="text" class="form-control" id="username" placeholder="請輸入姓名" required>
+                        <div class="invalid-feedback">
+                           請輸入姓名
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel" class="form-label">電話*</label>
+                        <input type="tel" class="form-control" id="tel" placeholder="請輸入電話" required>
+                        <div class="invalid-feedback">
+                            請輸入電話
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">email</label>
+                        <input type="email" class="form-control" id="email" placeholder="請輸入信箱" required>
+                        <div class="invalid-feedback">
+                            請輸入信箱
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="number" class="form-label">用餐人數*</label>
+                        <input type="number" class="form-control" id="number" placeholder="請輸入人數" required>
+                        <div class="invalid-feedback">
+                            請輸入用餐人數
+                        </div>
+                    </div>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            需要素食
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            不需要素食
+                        </label>
+                    </div>
+                    <div class="text-end">
+                        <button type="reset" class="btn btn-secondary">取消</button>
+                        <button type="submit" class="btn btn-primary">送出</button>
+                    </div>                    
+                </form>
+                <script>
+                     // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                'use strict'
+                
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.querySelectorAll('.needs-validation')
+                
+                // Loop over them and prevent submission
+                Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+                
+                form.classList.add('was-validated')
+                }, false)
+                })
+                })()
+                </script>
+               
+
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small> 加入我們</small>
+                        <h3>人才招募</h3>
+                        <p>擁有良好溝通環境與歡樂的企業文化，
+                            讓夥伴能傾注全力熱誠，在門市創造活力氛圍，
+                            提供顧客無與倫比的甜點體驗！</p>
+                        <a href="" class="btn btn-outline-warning">加入我們</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-4 bg-cover text-white" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+                <div class="row">
+                    <div class="col-md-9">
+                        <small>企業精神</small>
+                        <h3>BRAND SPIRIT</h3>
+                        <p>以提供顧客享用甜點的歡樂體驗為宗旨，
+                            使人們感到幸福快樂，成為最優質最專業及最受歡迎的甜點品牌</p>
+                        <a href="" class="btn btn-outline-warning">品嘗佳餚</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>      
+<footer class="bg-light py-4 ms-3">
+    <ul class="container d-flex justify-content-between">
+        <ol>2021本作品無商業用途</li>
+        <oi class="ms-3"><a href="#" class="text-decoration-none">GitHub</a></li>
+        <oi class="ms-2"><a href="#" class="text-decoration-none">Facebook</a></li>
+        <oi class="ms-2"><a href="#" class="text-decoration-none">About</a></li>
+    </ul>   
+    
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="loginModalLabel">登入服務</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="請輸入email">
+                        <div id="emailHelp" class="form-text">我們不會隨意將您的email給予第三者</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label" >密碼</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">記住帳號</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registeModal" >還沒有帳號?</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">登入</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="registeModal" tabindex="-1" aria-labelledby="registeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" >
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-white">
+                <h5 class="modal-title" id="registeModalLabel">註冊服務</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>註冊Snow C</h2>
+                            <h3 class="text-pink">消費前出示會員條碼累點、兌點</h3>
+                            <p>兌點1點=現抵1元，消費立即折抵更有感。</p> 
+                            <h3 class="text-pink">週三買一送一</h3>
+                            <p>週三點購冰淇淋，歡樂分享同size買一送一(價低者為贈送品項，脆餅/桶裝除外)</p>
+                            <h3 class="text-pink">冰淇淋蛋糕天天 9 折</h3>
+                            <p>購買任一款冰淇淋蛋糕，天天享 9 折優惠</p>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="請輸入email">
+                                <div id="emailHelp" class="form-text">我們不會隨意將您的email給予第三者</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">密碼</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">確認密碼</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">同意條款</label>
+                            </div>
+                         </form>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <a href="" class="me-auto" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">已有帳號了?</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">註冊</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"></script>
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"
+            integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+            crossorigin="anonymous"></script>
+        
+        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+            integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+            crossorigin="anonymous"></script>
+         -->   
+</body>
+</html>
